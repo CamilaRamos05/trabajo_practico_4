@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facultad de Ingeniería - UNJu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="estilos.css">
+</head>	
+<body>
+
+    <div th:replace="layouts/header.html :: header"></div>
+
+
+    <div class="container my-5">
+        <div class="row">
+
+            <aside class="col-md-3 mb-4">
+                <h2 class="h5">Enlaces Rápidos</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="biblioteca.html">Biblioteca</a></li>
+                    <li class="list-group-item"><a href="calendar.html">Calendario Académico</a></li>
+                </ul>
+            </aside>
+
+			<section class="col-md-9">
+			            <h2 class="h4">Bienvenidos a la Facultad de Ingeniería</h2>
+			            <p>La Facultad de Ingeniería de la Universidad Nacional de Jujuy se dedica a la formación de profesionales con altos estándares de calidad y compromiso social. Ofrecemos una variedad de programas académicos diseñados para preparar a nuestros estudiantes para los desafíos del mundo moderno.</p>
+			            <h3 class="h5 mt-4">Noticias Recientes</h3>
+			            <div class="card mb-3">
+			                <div class="card-body">
+			                    <h5 class="card-title">Título de la Noticia</h5>
+			                    <p class="card-text">Descripción breve de la noticia reciente que puede incluir información importante y relevante para los estudiantes y el personal.</p>
+			                    <a href="#" class="btn btn-primary">Leer más</a>
+			                </div>
+			            </div>
+			            <div class="card mb-3">
+			                <div class="card-body">
+			                    <h5 class="card-title">Título de la Noticia</h5>
+			                    <p class="card-text">Descripción breve de la noticia reciente que puede incluir información importante y relevante para los estudiantes y el personal.</p>
+			                    <a href="#" class="btn btn-primary">Leer más</a>
+			                </div>
+			            </div>
+
+                <h3 class="h5 mt-4">Inscripciones</h3>
+                <p>Información sobre el proceso de inscripción...</p>
+
+
+                <h3 class="h5 mt-4">Contacto</h3>
+                <p>Información de contacto de la facultad...</p>
+            </section>
+        </div>
+    </div>
+
+
+    <div th:replace="layouts/footer.html :: footer"></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
